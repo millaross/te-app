@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:context=".CheckRingStudyActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <!-- Title -->
+        <TextView
+            android:id="@+id/textViewTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ring Study Inputs"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <!-- Container for Shot Inputs -->
+        <LinearLayout
+            android:id="@+id/shotInputsContainer"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintTop_toBottomOf="@id/textViewTitle"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="24dp">
+
+            <!-- Shot blocks (1–7) -->
+            <!-- Repeated pattern -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="8dp"
+                android:gravity="center_vertical">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Shot 1:"
+                    android:textSize="16sp"
+                    android:minHeight="48dp"
+                    android:gravity="center_vertical"/>
+                <EditText
+                    android:id="@+id/editTextShot1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.5"
+                    android:hint="Value"
+                    android:inputType="numberDecimal"
+                    android:background="@drawable/edittext_outline"
+                    android:padding="12dp"
+                    android:minHeight="48dp"
+                    android:importantForAutofill="no" />
+            </LinearLayout>
+
+            <!-- Repeat this pattern for Shot 2–7 -->
+            <!-- Shot 2 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="8dp"
+                android:gravity="center_vertical">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Shot 2:"
+                    android:textSize="16sp"
+                    android:minHeight="48dp"
+                    android:gravity="center_vertical"/>
+                <EditText
+                    android:id="@+id/editTextShot2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.5"
+                    android:hint="Value"
+                    android:inputType="numberDecimal"
+                    android:background="@drawable/edittext_outline"
+                    android:padding="12dp"
+                    android:minHeight="48dp"
+                    android:importantForAutofill="no" />
+            </LinearLayout>
+
+            <!-- Shot 3 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="8dp"
+                android:gravity="center_vertical">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Shot 3:"
+                    android:textSize="16sp"
+                    android:minHeight="48dp"
+                    android:gravity="center_vertical"/>
+                <EditText
+                    android:id="@+id/editTextShot3"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.5"
+                    android:hint="Value"
+                    android:inputType="numberDecimal"
+                    android:background="@drawable/edittext_outline"
+                    android:padding="12dp"
+                    android:minHeight="48dp"
+                    android:importantForAutofill="no" />
+            </LinearLayout>
+
+            <!-- Shot 4 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="8dp"
+                android:gravity="center_vertical">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Shot 4:"
+                    android:textSize="16sp"
+                    android:minHeight="48dp"
+                    android:gravity="center_vertical"/>
+                <EditText
+                    android:id="@+id/editTextShot4"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.5"
+                    android:hint="Value"
+                    android:inputType="numberDecimal"
+                    android:background="@drawable/edittext_outline"
+                    android:padding="12dp"
+                    android:minHeight="48dp"
+                    android:importantForAutofill="no" />
+            </LinearLayout>
+
+            <!-- Shot 5 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="8dp"
+                android:gravity="center_vertical">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Shot 5:"
+                    android:textSize="16sp"
+                    android:minHeight="48dp"
+                    android:gravity="center_vertical"/>
+                <EditText
+                    android:id="@+id/editTextShot5"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.5"
+                    android:hint="Value"
+                    android:inputType="numberDecimal"
+                    android:background="@drawable/edittext_outline"
+                    android:padding="12dp"
+                    android:minHeight="48dp"
+                    android:importantForAutofill="no" />
+            </LinearLayout>
+
+            <!-- Shot 6 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="8dp"
+                android:gravity="center_vertical">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Shot 6:"
+                    android:textSize="16sp"
+                    android:minHeight="48dp"
+                    android:gravity="center_vertical"/>
+                <EditText
+                    android:id="@+id/editTextShot6"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.5"
+                    android:hint="Value"
+                    android:inputType="numberDecimal"
+                    android:background="@drawable/edittext_outline"
+                    android:padding="12dp"
+                    android:minHeight="48dp"
+                    android:importantForAutofill="no" />
+            </LinearLayout>
+
+            <!-- Shot 7 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="8dp"
+                android:gravity="center_vertical">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Shot 7:"
+                    android:textSize="16sp"
+                    android:minHeight="48dp"
+                    android:gravity="center_vertical"/>
+                <EditText
+                    android:id="@+id/editTextShot7"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.5"
+                    android:hint="Value"
+                    android:inputType="numberDecimal"
+                    android:background="@drawable/edittext_outline"
+                    android:padding="12dp"
+                    android:minHeight="48dp"
+                    android:importantForAutofill="no" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

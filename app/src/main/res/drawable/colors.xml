@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Primary brand color -->
+    <color name="colorPrimary">#6200EE</color>
+
+    <!-- Darker variant of primary color (used for status bar, etc.) -->
+    <color name="colorPrimaryVariant">#3700B3</color>
+
+    <!-- Secondary (accent) color -->
+    <color name="colorSecondary">#03DAC5</color>
+
+    <!-- Darker variant of secondary color -->
+    <color name="colorSecondaryVariant">#018786</color>
+
+    <!-- Background and surface colors -->
+    <color name="colorBackground">#FFFFFF</color>
+    <color name="colorSurface">#FFFFFF</color>
+
+    <!-- Text colors -->
+    <color name="colorOnPrimary">#FFFFFF</color>
+    <color name="colorOnSecondary">#000000</color>
+    <color name="colorOnBackground">#000000</color>
+    <color name="colorOnSurface">#000000</color>
+
+    <!-- Error color -->
+    <color name="colorError">#B00020</color>
+    <color name="colorOnError">#FFFFFF</color>
+
+    <!-- Add more custom colors below as needed -->
+    <!-- <color name="customColor">#FF0000</color> -->
+
+</resources>
